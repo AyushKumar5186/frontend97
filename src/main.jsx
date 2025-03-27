@@ -29,6 +29,7 @@ import { Toaster } from "react-hot-toast";
 import ExposureDetailPopup from "./components/ExposerDetails.jsx";
 import BatDetailsScreen from "./screens/BatDetailspage.jsx";
 import { io } from "socket.io-client";
+import MyProfile from "./screens/MyProfile.jsx";
 export const socket = io("https://titan97.live");
 
 createRoot(document.getElementById("root")).render(
@@ -52,6 +53,7 @@ createRoot(document.getElementById("root")).render(
                 <Route path="/account" element={<ExchangeHeader />} />
                 <Route path="/casino/:id" element={<EventDetails />} />
                 <Route path="/casino" element={<CasinoBox />} />
+                <Route path="/my-profile" element={<MyProfile />} />
               </Route>
             </Route>
           </Routes>

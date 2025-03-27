@@ -29,7 +29,7 @@ const Dashboard = () => {
             "My Profile", "Multi Markets", "Rolling Commission", "Account Statement",
             "Bets History", "Profit & Loss", "Password History", "Activity Log"
           ].map((item, index) => (
-            <li key={index} className="p-4 border-b flex justify-between items-center hover:bg-gray-200 cursor-pointer">
+            <li key={index} className="p-4 border-b flex justify-between items-center bg-red-600 hover:bg-gray-200 cursor-pointer">
               {item}
               <span>▶️</span>
             </li>

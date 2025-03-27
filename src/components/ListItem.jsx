@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaChevronRight } from 'react-icons/fa';
 import ToggleArrowButton from './ToggleArrowButton';
+import { Link } from 'react-router';
 
 const ListItem = ({ item, classname, isToggle, isIcon, onClick, isExpanded , preIcon }) => {
   
   
   return (
-    <div 
+    <Link to={"/my-profile"}
       className={`flex justify-between ${preIcon && "ml-[10px]"} items-center px-4 py-3 border-b border-gray-300 cursor-pointer hover:bg-gray-100`}
       onClick={onClick} 
     >
@@ -25,7 +26,7 @@ const ListItem = ({ item, classname, isToggle, isIcon, onClick, isExpanded , pre
       {isToggle && 
         <ToggleArrowButton isDown={isExpanded} /> 
       }
-    </div>
+    </Link>
   );
 };
 
